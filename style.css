@@ -796,3 +796,99 @@ textarea{
 
   border: 1px solid #dddddd ;
 }
+@media screen and (max-width: 900px)
+{
+  header{
+    width: 100%;
+  }
+#dhoni{
+  max-width: 15cm;
+  height: 18cm;
+  font-size: 15px;
+  text-align: left;
+  line-break: loose;
+  position: relative;
+  
+  
+}
+  #dhoni img{
+    position: static;
+    left: 400px;
+    bottom: 500px;
+    right: 300px; ;
+    background-color: white;
+    width: 8cm;
+    height: 5cm;
+    margin-bottom: 100px;
+
+     
+  }
+
+
+
+  
+  #place{
+    position: relative;
+    bottom: 50px;
+  }
+  #box{
+    height: 8cm;
+    width: 8cm;
+    font-size: 12px;
+    position: relative;
+    top: 550px;
+    left: 100px;
+    
+
+  }
+  #box ol{
+    position: relative;
+    bottom: 90px;
+    line-height: 10px;
+  }
+#phone h1{
+   font-size: 20px;
+   text-align: left;
+   margin-left: 3%;
+}
+#slider{
+  position: relative;
+  right: 30%;
+}
+#lakh{
+  font-size: 20px;
+  text-align: left;
+  margin-left: 5%;
+}
+#bottom{
+  font-size: 15px;
+}
+#footerup{
+  height: 20cm;
+  width: 15cm;
+  font-size: 20px;
+  position: relative;
+  top: 50px;
+}
+.carrousel{
+  height: 6cm;
+  width: 10cm;
+  font-size: 10px;
+}
+.carrousel img{
+height: 3cm;
+width: 5cm;
+}
+#tat{
+  height: 2cm;
+  width: 6cm ;
+  font-size: 15px;
+}
+#Footerdown{
+  height: 14cm;
+  width: 15cm;
+  text-decoration: none;
+  font-size: 13px;
+  line-break: normal;
+}
+}
