@@ -727,7 +727,7 @@ TODO: make it easier with SCSS
    line-break: loose;
    font-size: 20px;
    font-family: 'Rubik', sans-serif; 
-  font-weight: bold;
+  font-weight: 300;
 }
 #follow{
   font-weight: 200px;
@@ -785,7 +785,7 @@ font-weight: bold;
 #C{
   position: relative;
   left: 80%;
-  bottom: 120%;
+  bottom: 135%;
 }
 textarea{
   height: 4cm;
