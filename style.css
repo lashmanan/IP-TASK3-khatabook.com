@@ -13,7 +13,7 @@ header{
     height: 3cm;
     width: 1500px;
 }
-#menu{
+.topnav{
     width: 800px;
     height: 10%;
     padding: 0px 0px; 
@@ -61,7 +61,7 @@ header{
     transition: width .3s;
   }
 
-  #menu:active {
+  .topnav:active {
     position:relative;
     top:1px;
 }
@@ -85,16 +85,16 @@ a:hover ::after{
   width: 100%;
   transition: width .3s;
 }
-#menu ol{
+.topnav ol  {
   text-align: left;
   padding: 0px;
   margin: 0px;
   position: relative;
-    
-  bottom: 225%;
+  bottom: 40px;
+
 }
 
-#menu ol a{
+.topnav ol a{
   list-style-type: none;
   display: inline-block;
   margin-left: -5px;
@@ -104,10 +104,45 @@ a:hover ::after{
   line-height: 30px;
 
   position: relative;
-
+bottom: 225%;
   
   cursor: pointer;
   text-align: center;
+}
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .topnav  a:not(:first-child)
+   {
+     display: none;
+    }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    position: relative;
+    right: 500px;
+    bottom: 50px;
+    
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 900px) {
+  .topnav.responsive {position: relative;}
+  .menu .responsive a.icon {
+    position: absolute;
+    left: 1000px;;
+    top: 0;
+  }
+  .topnav.responsive  {
+    float:right;
+    display: block;
+    text-align: left;
+    position: relative;
+    left: 400px;
+  
+  }
 }
 
 header h3{
@@ -151,7 +186,7 @@ color: white;
   background-color:  #d11023; 
   
   position: relative;
-  bottom: 50%;
+  top: -35%;
   color: white;
   height: 22cm ;
 }
@@ -190,7 +225,7 @@ color: white;
 #dhoni img{
   position: relative;
 left: 18%;
-top: 25%;
+top: 60%;
 }
 #place{
   margin-left: 5%;
@@ -423,6 +458,7 @@ text-align: left;
   display: flex;
   flex-direction: row;
   font: optional;
+  flex-wrap: wrap;
 
 }
 #bottom h4{
@@ -461,7 +497,10 @@ font-family: 'monospace', sans-serif;
   margin-left: 3%;
   text-align: justify;
   position: relative;
-  top: 250px;
+  left: 100px;
+  bottom: -200px;
+
+  text-align: justify;
   
   font-family: 'Noto Sans JP', sans-serif;
 }
@@ -796,29 +835,33 @@ textarea{
 
   border: 1px solid #dddddd ;
 }
+
 @media screen and (max-width: 900px)
 {
   header{
     width: 100%;
   }
 #dhoni{
-  max-width: 15cm;
+  max-width: 14cm;
   height: 18cm;
   font-size: 15px;
   text-align: left;
   line-break: loose;
   position: relative;
+  top:100px;
+  line-break: normal;
+  
   
   
 }
-  #dhoni img{
-    position: static;
-    left: 400px;
-    bottom: 500px;
-    right: 300px; ;
-    background-color: white;
-    width: 8cm;
-    height: 5cm;
+  #d{
+    position: absolute;
+  
+     bottom: 560px;
+    right: 200px; ;
+    
+    width: 12cm;
+    height: 12cm;
     margin-bottom: 100px;
 
      
@@ -829,15 +872,25 @@ textarea{
   
   #place{
     position: relative;
-    bottom: 50px;
+    bottom: 100px;
+    right: 700px;
+    width: 13cm;
   }
+
+#dhoni button{
+  position: absolute;
+  top: -39px;
+  right: 70px;
+
+}
   #box{
     height: 8cm;
     width: 8cm;
     font-size: 12px;
     position: relative;
     top: 550px;
-    left: 100px;
+    left: 50px;
+    border-radius: 5px;
     
 
   }
@@ -850,39 +903,81 @@ textarea{
    font-size: 20px;
    text-align: left;
    margin-left: 3%;
+   position: relative;
+   top: 150px;
+   width: 7cm;
+   font-weight: 500;
+}
+#phone img{
+  position: relative;
+  top: 100px;
 }
 #slider{
-  position: relative;
-  right: 30%;
+  position: absolute;
+  
+  top: 450px;
+  left: 10px;
+  height: 4cm;
+  width: 20cm;
+  text-decoration: none;
 }
 #lakh{
   font-size: 20px;
   text-align: left;
   margin-left: 5%;
+  position: relative;
+  top: 800px;
+  width: 9cm;
 }
+#signin{
+  position: relative;
+  bottom: 25px;
+  right: 20px;
+  width: 8cm;
+
+
+}
+#signin button{
+  position: relative;
+  left: 100px;
+  }
 #bottom{
   font-size: 15px;
+  position: relative;
+  top: 700px;
 }
 #footerup{
-  height: 20cm;
+  height: 26cm;
   width: 15cm;
   font-size: 20px;
   position: relative;
-  top: 50px;
+  top: 700px;
 }
+#carrousel h1{
+  position: relative;
+  top: 50px;
+  font-weight: 200;
+}
+
+
 .carrousel{
   height: 6cm;
   width: 10cm;
   font-size: 10px;
+  position: relative;
+  right: 50px;
 }
 .carrousel img{
 height: 3cm;
 width: 5cm;
 }
 #tat{
-  height: 2cm;
-  width: 6cm ;
+  height: 5cm;
+  width: 8cm ;
   font-size: 15px;
+  position: absolute;
+  left: 100px;
+  top: 450px;
 }
 #Footerdown{
   height: 14cm;
@@ -890,5 +985,22 @@ width: 5cm;
   text-decoration: none;
   font-size: 13px;
   line-break: normal;
+  position: relative;
+  top: 500px;
+}
+#address{
+  text-align: justify;
+  
+}
+#social{
+  position: relative;
+  right: 50px;
+
+}
+#last{
+  position: relative;
+  top: 500px;
+  word-spacing: 0.5cm;
+  text-align: left;
 }
 }
